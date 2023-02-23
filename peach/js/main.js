@@ -175,30 +175,39 @@ $(function(){
 
 // -----------------------------------------------
 
-        $(window).scroll(function(){
-            var scrollTop = $(this).scrollTop() 
-            var $navLeft = $("#navLeft");
-            var $navRight = $("#navRight");
- 
-        
-            if(scrollTop > 0){
-                $navLeft.css({ "opacity":"1"})
-                $navRight.css({"opacity":"1"})
-                $header.css({
-                    "background-color":"white",
-                    "border-bottom":"solid 2px #f1f2f6"
-                })
-                $("#logo>img").attr("src","images/logopinkver.png")
-               
-            } else{
-                $navLeft.css({"opacity":"0"});
-                $navRight.css({"opacity":"0"})
-                $header.css({"background-color":"transparent",
-                "border-bottom":"none"
-            })
-                $("#logo>img").attr("src","images/logowhitever.png")
-            }
-        });
+var lastScrollTop = 0;
+
+// $(window).scroll(function(){
+//     var scrollTop = $(this).scrollTop() 
+
+
+//     if ((scrollTop > lastScrollTop) && (lastScrollTop>0)) {
+//         /* 화면에 나오지 않을 때, top값은 요소가 보이지 않을 정도로 사용해야함 */
+//         $header.css({
+//             "top":"-500px",
+//             "transition-duration":"100ms"
+//         });
+       
+//     } else {
+//         $header.css({
+//             "top":"0px",
+//             "transition-duration":"400ms",
+//             "z-index":"10000",
+//             "background-color":"#fff",
+//             "border-bottom" :"1px solid #f1f2f6"
+//         });
+//         $("#mainmenu>ul>li>a").css({"color":"black"})
+//         $("#logo>img").attr("src","images/logopinkver.png")
+//         $("#nav_p>img").attr("src","images/nav_person.png")
+//         $("#nav_c>img").attr("src","images/nav_cart.png")
+//         $("#nav_s>img").attr("src","images/nav_search.png")
+//         $("#nav_l").css("color","black")
+//         $("#subwrap").css({ 
+//             "box-shadow":"1em 1em 1em #43434338"
+//     })}
+//     lastScrollTop = scrollTop;
+
+// });
 
 
 

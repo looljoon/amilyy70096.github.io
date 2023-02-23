@@ -45,16 +45,19 @@ img{
 .subList::after{content: "";display: block;clear: both;}
 #utilwrap::after{content: "";display: block;clear: both;}
 #mainwrap::after{content: "";display: block;clear: both;}
+
 #popmsg::after{content: "";display: block;clear: both;}
 #notice::after{content: "";display: block;clear: both;}
 
 
 #header{
-    position: fixed;
     width: 100%;
-    z-index: 1;
 }
 
+#mainwrap{
+    margin:0 auto;
+    width: 80%;
+}
 
 #util{
     width: 100%;
@@ -70,37 +73,32 @@ img{
     text-decoration: underline;
     color:#ed4c67;
 }
-#mainwrap{
-    margin: 0 auto;
-    width: 80%;
-}
 
 
 #logo{
     float: left;
 }
 #logo>img { 
-    width: 7em;
+    width: 8em;
     margin: 1em auto;
 } 
 
 /* navLeft */
 #navLeft{
-    margin-left: 21%;
+    margin-left: 13%;
     float: left;
-    opacity: 0;
 }
 
 #mainmenu>ul>li{
     float: left;
     text-align: center;
     position: relative;
-    width: 9em;
+    width: 11em
    
 }
 #mainmenu>ul>li>a{
-    line-height: 400%;
-    font-size: 1.1em;
+    line-height: 380%;
+    font-size: 1.2em;
     letter-spacing: 1px;
 }
 
@@ -197,7 +195,6 @@ img{
 
 #navRight{
     float: right;
-    opacity: 0;
   
 }
 #navRight>ul{
@@ -206,7 +203,7 @@ img{
 #navRight>ul>li{
     float: left;
     font-size: 1.2em;
-    margin-right: 2em;
+    margin-right: 2.5em;
     cursor: pointer;
    
 }
